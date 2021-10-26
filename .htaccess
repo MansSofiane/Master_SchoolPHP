@@ -1,0 +1,14 @@
+Options +MultiViews
+
+
+
+RewriteEngine on
+
+
+RewriteRule ^Espace.html  acceuil.php
+
+RewriteRule ^Administration.html  admin.php
+RewriteRule ^Direction.html  direction.php
+RewriteRule ^Superviseur.html  superviseur.php
+RewriteRule ^index.html  index.php
+

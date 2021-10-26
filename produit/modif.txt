@@ -1,0 +1,30 @@
+DemandeResiliation
+Liste-demande
+
+DemandeResiliation
+
+php/avenant/voy/favDemRes.php
+
+php/avenant/voy/validationDem.php
+
+php/avenant/voy/charger.php
+
+dempolvoyind.php
+accorder
+rejeter
+
+adm\apolvoyind.php
+Liste-demande
+
+create table `demande` (
+	`id_demande` double ,
+	`cod_pol` double ,
+	`type_annulation` varchar (765),
+	`date_annulation` datetime ,
+	`motif_annulation` varchar (600),
+	`chemin_just` varchar (765),
+	`etat_dem` varchar (3),
+	`is_avenant` tinyint (1),
+	`Description` varchar (765),
+	`id_user` double 
+); 

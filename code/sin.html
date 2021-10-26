@@ -1,0 +1,127 @@
+  <div id="content-header">
+    <div id="breadcrumb"> <a class="tip-bottom"><i class="icon-info-sign"></i> Sinistres</a></div>
+  </div>
+ <div class="container-fluid">
+  <hr>
+  <div class="row-fluid">
+  
+  
+    <div class="span6">
+      <div class="widget-box">
+        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i></span><h5>info-Souscripteur</h5></div>
+        <div class="widget-content nopadding">
+          <form class="form-horizontal">
+		   <div class="control-group">
+              <label class="control-label">Type-Souscripteur</label>
+              <div class="controls">
+                <select id="typsous">
+				  <option value="0">--</option>
+                  <option value="1">Personne-Moral</option>
+                  <option value="2">Personne-Physique</option>
+                </select>
+              </div>
+            </div>
+			 <div class="control-group">
+              <label class="control-label">Le Souscripteur est l'assure:</label>
+              <div class="controls">
+                <label>
+                  <input type="radio" name="radios" />
+                  Oui</label><label>
+                  <input type="radio" name="radios" />
+                  Non</label>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Nom *:</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="Nom" />
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Prenom *:</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="Prenom" />
+              </div>
+            </div>
+			 <div class="control-group">
+              <label class="control-label">Raison Sociale *:</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="R-Sociale.." />
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Adresse *:</label>
+              <div class="controls">
+                <input type="text"  class="span11" placeholder="Adresse"  />
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Telephone:</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="+213 ...." />
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">E-mail:</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="E-mail..." />
+              </div>
+            </div>
+			 <div class="control-group">
+              <label class="control-label">Numero Passeport:</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="Passport numero" />
+              </div>
+            </div>
+			 <div class="control-group">
+              <label class="control-label">Date-Naissance</label>
+              <div class="controls">
+                  <div  data-date="12-02-2012" data-date-format="dd/mm/yyyy" class="input-append date datepicker">
+                  <input type="text" data-date-format="dd/mm/yyyy" class="datepicker span11">
+                  <span class="add-on"><i class="icon-th"></i></span> 
+				  </div>
+              </div>           
+            </div>
+            <div class="form-actions" align="right">
+			  <input type="submit" class="btn btn-primary" onClick="test()" value="Reset" />
+              
+              <button type="submit" class="btn btn-info">Editer</button>
+              <button type="submit" class="btn btn-danger">Annuler</button>
+			  <button type="submit" class="btn btn-success">Suivant</button>
+            </div>
+          </form>
+        </div>
+      </div>
+	 </div>
+   
+    <div class="span6">
+      <div class="widget-box">
+        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+          <h5>Info-Assure-Voyage</h5>
+        </div>
+        <div class="widget-content nopadding">
+          <form class="form-horizontal">
+          
+            <div class="control-group">
+              <label class="control-label">Date Picker (mm-dd)</label>
+              <div class="controls">
+                  <div  data-date="12-02-2012" data-date-format="dd/mm/yyyy" class="input-append date datepicker">
+                  <input type="text" data-date-format="dd/mm/yyyy" class="datepicker span11">
+                  <span class="add-on"><i class="icon-th"></i></span> 
+				  </div>
+              </div>           
+            </div>
+			
+            <div class="form-actions">
+              <button type="submit" class="btn btn-success">Save</button>
+              <button type="submit" class="btn btn-primary">Reset</button>
+              <button type="submit" class="btn btn-info">Edit</button>
+              <button type="submit" class="btn btn-danger">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>   
+  </div>
+  </div>
+  
+ 

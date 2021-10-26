@@ -1,0 +1,9 @@
+Options +MultiViews
+
+
+RewriteEngine on
+
+RewriteRule ^Chargement.html  charger.php
+RewriteRule ^Fichier-En-Cours.html  lfiles.php
+RewriteRule ^Fichier-Archives.html  lafiles.php
+RewriteRule ^Import-Excel.html  chargement.php

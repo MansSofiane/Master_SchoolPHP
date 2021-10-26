@@ -1,0 +1,6 @@
+Options +MultiViews
+
+
+RewriteEngine on
+
+RewriteRule ^Chargement.html  charger.php

@@ -1,0 +1,37 @@
+produit/voyage/groupe/phy/check.php
+
+C:\wamp\www\Intranet-Salama-test\produit\voyage\groupe\phy\charger_assur.php
+
+create table `quittance` (
+	`id_quit` double ,
+	`cod_quit` double ,
+	`mois` double ,
+	`date_quit` date ,
+	`agence` varchar (30),
+	`cod_ref` double ,
+	`cod_sous` double ,
+	`mtt_quit` Decimal (20),
+	`solde_pol` Decimal (20),
+	`cod_dt` double ,
+	`cod_cpl` double ,
+	`id_user` double ,
+	`type_quit` double ,
+	`sens` double 
+); 
+
+Creation la table sequence_ag pour 
+le produit PTA et Groupe
+
+create table `sequence_ag` (
+	`id_sequence` double ,
+	`cod_prod` double ,
+	`cod_agence` varchar (30),
+	`sequence` double ,
+	`sequence2` double ,
+	`sequence_avis` double ,
+	`sequence_quit` double ,
+	`sequence_avis_dep` double ,
+	`sequence_quit_dep` double ,
+	`sequence_fact` double ,
+	`dat_cloture` date 
+); 

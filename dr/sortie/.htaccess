@@ -1,0 +1,75 @@
+Options +MultiViews
+
+
+RewriteEngine on
+RewriteRule ^devis/([0-9]*)$  pdevwar.php?warda=$1 [L]
+RewriteRule ^devis2/([0-9]*)$  pdeviacc.php?warda=$1 [L]
+RewriteRule ^devis3/([0-9]*)$  pdevtd.php?warda=$1 [L]
+RewriteRule ^devis4/([0-9]*)$  pdevade.php?warda=$1 [L]
+RewriteRule ^devis5/([0-9]*)$  pdeviaccg.php?warda=$1 [L]
+
+RewriteRule ^devis8/([0-9]*)$  pdev.php?individuel=$1 [L]
+RewriteRule ^d-couple/([0-9]*)$  pcdev.php?warda=$1 [L]
+RewriteRule ^d-famille/([0-9]*)$  pfdev.php?famille=$1 [L]
+RewriteRule ^d-groupe/([0-9]*)$  pgdev.php?groupe=$1 [L]
+
+RewriteRule ^police/([0-9]*)$  ppol.php?individuel=$1 [L]
+RewriteRule ^p-couple/([0-9]*)$  pcpol.php?famille=$1 [L]
+RewriteRule ^p-famille/([0-9]*)$  pfpol.php?famille=$1 [L]
+RewriteRule ^p-groupe/([0-9]*)$  pgpol.php?groupe=$1 [L]
+
+RewriteRule ^contrat/([0-9]*)$  ppolwar.php?warda=$1 [L]
+RewriteRule ^contrat2/([0-9]*)$  ppoliacc.php?warda=$1 [L]
+RewriteRule ^contrat3/([0-9]*)$  ppoltd.php?warda=$1 [L]
+RewriteRule ^contrat4/([0-9]*)$  ppolade.php?warda=$1 [L]
+RewriteRule ^contrat5/([0-9]*)$  ppoliaccg.php?warda=$1 [L]
+RewriteRule ^Avenant-MD1/([0-9]*)$  pavrdwar.php?warda=$1 [L]
+RewriteRule ^Avenant-PR1/([0-9]*)$  pavprwar.php?warda=$1 [L]
+RewriteRule ^Avenant-SR1/([0-9]*)$  pavsrwar.php?warda=$1 [L]
+RewriteRule ^Avenant-AR1/([0-9]*)$  pavarwar.php?warda=$1 [L]
+RewriteRule ^Avenant-MD2/([0-9]*)$  pavrdiacc.php?warda=$1 [L]
+RewriteRule ^Avenant-PR2/([0-9]*)$  pavpriacc.php?warda=$1 [L]
+RewriteRule ^Avenant-SR2/([0-9]*)$  pavsriacc.php?warda=$1 [L]
+RewriteRule ^Avenant-AR2/([0-9]*)$  pavariacc.php?warda=$1 [L]
+RewriteRule ^Avenant-MD3/([0-9]*)$  pavrdade.php?warda=$1 [L]
+RewriteRule ^Avenant-PR3/([0-9]*)$  pavprade.php?warda=$1 [L]
+RewriteRule ^Avenant-SR3/([0-9]*)$  pavsrade.php?warda=$1 [L]
+RewriteRule ^Avenant-AR3/([0-9]*)$  pavarade.php?warda=$1 [L]
+RewriteRule ^Avenant-SUB3/([0-9]*)$  pavsubade.php?warda=$1 [L]
+RewriteRule ^Avenant-MD4/([0-9]*)$  pavrdtd.php?warda=$1 [L]
+RewriteRule ^Avenant-PR4/([0-9]*)$  pavprtd.php?warda=$1 [L]
+RewriteRule ^Avenant-SR4/([0-9]*)$  pavsrtd.php?warda=$1 [L]
+RewriteRule ^Avenant-AR4/([0-9]*)$  pavartd.php?warda=$1 [L]
+RewriteRule ^Avenant-SUB4/([0-9]*)$  pavsubtd.php?warda=$1 [L]
+RewriteRule ^Convention/([0-9]*)$  pconv.php?conv=$1 [L]
+
+
+RewriteRule ^indivavenant/([0-9]*)$  pavind.php?avenant=$1 [L]
+RewriteRule ^c-avenant/([0-9]*)$  pcav.php?avenant=$1 [L]
+RewriteRule ^f-avenant/([0-9]*)$  pfav.php?avenant=$1 [L]
+RewriteRule ^g-avenant/([0-9]*)$  pgav.php?groupe=$1 [L]
+RewriteRule ^indivavenantp/([0-9]*)$  pavindp.php?avenant=$1 [L]
+RewriteRule ^c-avenantp/([0-9]*)$  pcavp.php?avenant=$1 [L]
+RewriteRule ^f-avenantp/([0-9]*)$  pfavp.php?avenant=$1 [L]
+RewriteRule ^g-avenantp/([0-9]*)$  pgavp.php?groupe=$1 [L]
+RewriteRule ^g-avenantsr/([0-9]*)$  pgavsr.php?groupe=$1 [L]
+RewriteRule ^g-avenantar/([0-9]*)$  pavar.php?avenant=$1 [L]
+RewriteRule ^g-avenantdest/([0-9]*)$  pavdest.php?avenant=$1 [L]
+
+RewriteRule ^Recapitulatif/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ global.php?d1=$1&p=$2&d2=$3
+RewriteRule ^Recapitulatif-P/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ globalp.php?d1=$1&p=$2&d2=$3
+RewriteRule ^Recapitulatif-N/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ globaln.php?d1=$1&p=$2&d2=$3
+RewriteRule ^Recapitulatif-NSR/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ globalnsr.php?d1=$1&p=$2&d2=$3
+RewriteRule ^tousproduits/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ globalg.php?d1=$1&p=$2&d2=$3
+RewriteRule ^Recapitulatifg-P/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ globalgp.php?d1=$1&p=$2&d2=$3
+RewriteRule ^Recapitulatifg-N/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ globalgn.php?d1=$1&p=$2&d2=$3
+RewriteRule ^Recapitulatifg-NSR/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ globalgnsr.php?d1=$1&p=$2&d2=$3
+
+RewriteRule ^S-Recapitulatif/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ globals.php?d1=$1&p=$2&u=$3&d2=$4
+RewriteRule ^S-Recapitulatifg/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ globalsg2.php?d1=$1&p=$2&u=$3&d2=$4
+RewriteRule ^R-Q-C-S/([0-9]*)$ questw.php?warda=$1 [L]
+RewriteRule ^R-Q/([0-9]*)$ quest.php?warda=$1 [L]
+RewriteRule ^SD-Recapitulatif/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ dglobals.php?d1=$1&p=$2&u=$3&d2=$4
+RewriteRule ^SD-Recapitulatifg/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ dglobalsg.php?d1=$1&p=$2&u=$3&d2=$4
+RewriteRule ^SS-Recapitulatif/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ sglobals.php?d1=$1&p=$2&u=$3&d2=$4
+RewriteRule ^SS-Recapitulatifg/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ sglobalsg2.php?d1=$1&p=$2&u=$3&d2=$4

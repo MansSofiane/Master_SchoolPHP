@@ -1,0 +1,13 @@
+Options +MultiViews
+
+
+
+RewriteEngine on
+
+
+RewriteRule ^Excel/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ xlsg2.php?row=$1&row1=$2&row2=$3&row3=$4
+
+RewriteRule ^Excel-G/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ axlsg2.php?row=$1&row1=$2&row2=$3&row3=$4
+
+RewriteRule ^Excel-D/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ dxlsg2.php?row=$1&row1=$2&row2=$3&row3=$4
+RewriteRule ^Excel-S/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ sxlsg2.php?row=$1&row1=$2&row2=$3&row3=$4

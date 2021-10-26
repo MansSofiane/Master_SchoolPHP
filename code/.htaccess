@@ -1,0 +1,6 @@
+Options +MultiViews
+
+
+RewriteEngine on
+
+RewriteRule ^zones.html  zones.php
